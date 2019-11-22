@@ -49,8 +49,10 @@ function TodoForm({ addTodo }: TodoFormProps) {
         type="text"
         className="input"
         value={value}
+        aria-label="Item description"
         onChange={e => setValue(e.target.value)}
       />
+      <input type="submit" value="Add to list"/>
     </form>
   );
 }
